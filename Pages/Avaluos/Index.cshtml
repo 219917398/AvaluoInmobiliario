@@ -1,0 +1,62 @@
+﻿@page
+@model AvaluoInmobiliario.Pages.Avaluos.IndexModel
+
+@{
+    ViewData["Title"] = "Listado de Avalúos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-page="Create">Crear nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Acciones</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Avaluo[0].FechaAvaluo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Avaluo[0].UsuarioId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Avaluo[0].Valuador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Avaluo[0].Solicitante)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Avaluo[0].EstatusAvaluo)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Avaluo)
+        {
+            <tr>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Eliminar</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaAvaluo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UsuarioId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Valuador)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Solicitante)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EstatusAvaluo.Descripcion)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

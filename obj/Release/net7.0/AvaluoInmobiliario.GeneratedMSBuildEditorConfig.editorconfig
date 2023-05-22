@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AvaluoInmobiliario
+build_property.RootNamespace = AvaluoInmobiliario
+build_property.ProjectDir = C:\pina\AvaluoInmobiliario\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\pina\AvaluoInmobiliario
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/pina/AvaluoInmobiliario/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Avaluos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXZhbHVvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Avaluos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXZhbHVvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Avaluos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXZhbHVvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Avaluos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXZhbHVvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Avaluos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXZhbHVvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/EstatusAvaluo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0YXR1c0F2YWx1b1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/EstatusAvaluo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0YXR1c0F2YWx1b1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/EstatusAvaluo/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0YXR1c0F2YWx1b1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/EstatusAvaluo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0YXR1c0F2YWx1b1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/EstatusAvaluo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0YXR1c0F2YWx1b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/pina/AvaluoInmobiliario/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9igzy9n9so

@@ -1,0 +1,434 @@
+﻿@page
+@model AvaluoInmobiliario.Pages.Avaluos.CreateModel
+
+@{
+    ViewData["Title"] = "Nuevo";
+
+}
+
+
+
+<h4>Aspectos Generales</h4>
+<div class="row">
+    <div class="col-md-4">
+        <hr />
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <section>
+            <div class="form-group">
+                <label asp-for="Avaluo.FechaAvaluo" class="control-label"></label>
+                <input asp-for="Avaluo.FechaAvaluo" class="form-control" />
+                <span asp-validation-for="Avaluo.FechaAvaluo" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="Avaluo.UsuarioId" class="control-label"></label>
+                <input asp-for="Avaluo.UsuarioId" class="form-control" />
+                <span asp-validation-for="Avaluo.UsuarioId" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Avaluo.Valuador" class="control-label"></label>
+                <input asp-for="Avaluo.Valuador" class="form-control" />
+                <span asp-validation-for="Avaluo.Valuador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Solicitante" class="control-label"></label>
+                <input asp-for="Avaluo.Solicitante" class="form-control" />
+                <span asp-validation-for="Avaluo.Solicitante" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.PropietarioInmueble" class="control-label"></label>
+                <input asp-for="Avaluo.PropietarioInmueble" class="form-control" />
+                <span asp-validation-for="Avaluo.PropietarioInmueble" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.PropositoAvaluo" class="control-label"></label>
+                <input asp-for="Avaluo.PropositoAvaluo" class="form-control" />
+                <span asp-validation-for="Avaluo.PropositoAvaluo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Avaluo.EstatusAvaluoId" class="control-label"></label>
+                <select asp-for="Avaluo.EstatusAvaluoId" class="form-control" asp-items="ViewBag.EstatusAvaluoId"></select>
+                <span asp-validation-for="Avaluo.EstatusAvaluoId" class="text-danger"></span>
+            </div>
+            </section>
+            <br />
+            <section>
+            <h4>Información General del Inmueble</h4>
+            <hr />
+            <div class="form-group">
+                <label asp-for="Avaluo.TipoPropiedad" class="control-label"></label>
+                <input asp-for="Avaluo.TipoPropiedad" class="form-control" />
+                <span asp-validation-for="Avaluo.TipoPropiedad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Calle" class="control-label"></label>
+                <input asp-for="Avaluo.Calle" class="form-control" />
+                <span asp-validation-for="Avaluo.Calle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.NumExterior" class="control-label"></label>
+                <input asp-for="Avaluo.NumExterior" class="form-control" />
+                <span asp-validation-for="Avaluo.NumExterior" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.NumInterior" class="control-label"></label>
+                <input asp-for="Avaluo.NumInterior" class="form-control" />
+                <span asp-validation-for="Avaluo.NumInterior" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Conjunto" class="control-label"></label>
+                <input asp-for="Avaluo.Conjunto" class="form-control" />
+                <span asp-validation-for="Avaluo.Conjunto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Colonia" class="control-label"></label>
+                <input asp-for="Avaluo.Colonia" class="form-control" />
+                <span asp-validation-for="Avaluo.Colonia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.CodigoPostal" class="control-label"></label>
+                <input asp-for="Avaluo.CodigoPostal" class="form-control" />
+                <span asp-validation-for="Avaluo.CodigoPostal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Ciudad" class="control-label"></label>
+                <input asp-for="Avaluo.Ciudad" class="form-control" />
+                <span asp-validation-for="Avaluo.Ciudad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.DelegacionMunicipio" class="control-label"></label>
+                <input asp-for="Avaluo.DelegacionMunicipio" class="form-control" />
+                <span asp-validation-for="Avaluo.DelegacionMunicipio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Estado" class="control-label"></label>
+                <input asp-for="Avaluo.Estado" class="form-control" />
+                <span asp-validation-for="Avaluo.Estado" class="text-danger"></span>
+            </div>
+            </section>
+            <br />
+
+            <h4>Entorno</h4>
+            <hr />
+
+            <div class="form-group">
+                <label asp-for="Avaluo.ClasifZona" class="control-label"></label>
+                <input asp-for="Avaluo.ClasifZona" class="form-control" />
+                <span asp-validation-for="Avaluo.ClasifZona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.RefProxUrbana" class="control-label"></label>
+                <input asp-for="Avaluo.RefProxUrbana" class="form-control" />
+                <span asp-validation-for="Avaluo.RefProxUrbana" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.ConstruccionesPredom" class="control-label"></label>
+                <input asp-for="Avaluo.ConstruccionesPredom" class="form-control" />
+                <span asp-validation-for="Avaluo.ConstruccionesPredom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.IndiceSaturacion" class="control-label"></label>
+                <input asp-for="Avaluo.IndiceSaturacion" class="form-control" />
+                <span asp-validation-for="Avaluo.IndiceSaturacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.DensidadPoblacion" class="control-label"></label>
+                <input asp-for="Avaluo.DensidadPoblacion" class="form-control" />
+                <span asp-validation-for="Avaluo.DensidadPoblacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.NivelSocioeconomico" class="control-label"></label>
+                <input asp-for="Avaluo.NivelSocioeconomico" class="form-control" />
+                <span asp-validation-for="Avaluo.NivelSocioeconomico" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.ViasAcceso" class="control-label"></label>
+                <input asp-for="Avaluo.ViasAcceso" class="form-control" />
+                <span asp-validation-for="Avaluo.ViasAcceso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.IntensidadFlujoVehicular" class="control-label"></label>
+                <input asp-for="Avaluo.IntensidadFlujoVehicular" class="form-control" />
+                <span asp-validation-for="Avaluo.IntensidadFlujoVehicular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.InfraestructuraDisponible" class="control-label"></label>
+                <input asp-for="Avaluo.InfraestructuraDisponible" class="form-control" />
+                <span asp-validation-for="Avaluo.InfraestructuraDisponible" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.ServiciosBasicos" class="control-label"></label>
+                <input asp-for="Avaluo.ServiciosBasicos" class="form-control" />
+                <span asp-validation-for="Avaluo.ServiciosBasicos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.OtrosServicios" class="control-label"></label>
+                <input asp-for="Avaluo.OtrosServicios" class="form-control" />
+                <span asp-validation-for="Avaluo.OtrosServicios" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.EquipamientoUrbano" class="control-label"></label>
+                <input asp-for="Avaluo.EquipamientoUrbano" class="form-control" />
+                <span asp-validation-for="Avaluo.EquipamientoUrbano" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.ComentariosEntorno" class="control-label"></label>
+                <input asp-for="Avaluo.ComentariosEntorno" class="form-control" />
+                <span asp-validation-for="Avaluo.ComentariosEntorno" class="text-danger"></span>
+            </div>
+            <br />
+            <h4>Terreno</h4>
+            <hr />
+            <div class="form-group">
+                <label asp-for="Avaluo.CallesLimOrientacion" class="control-label"></label>
+                <input asp-for="Avaluo.CallesLimOrientacion" class="form-control" />
+                <span asp-validation-for="Avaluo.CallesLimOrientacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Dimensiones" class="control-label"></label>
+                <input asp-for="Avaluo.Dimensiones" class="form-control" />
+                <span asp-validation-for="Avaluo.Dimensiones" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Colindancia" class="control-label"></label>
+                <input asp-for="Avaluo.Colindancia" class="form-control" />
+                <span asp-validation-for="Avaluo.Colindancia" class="text-danger"></span>
+            </div>
+            <br />
+            <h4>Especificaciones del Terreno</h4>
+            <hr />
+            <div class="form-group">
+                <label asp-for="Avaluo.Configuracion" class="control-label"></label>
+                <input asp-for="Avaluo.Configuracion" class="form-control" />
+                <span asp-validation-for="Avaluo.Configuracion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Topografia" class="control-label"></label>
+                <input asp-for="Avaluo.Topografia" class="form-control" />
+                <span asp-validation-for="Avaluo.Topografia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.UsoSuelo" class="control-label"></label>
+                <input asp-for="Avaluo.UsoSuelo" class="form-control" />
+                <span asp-validation-for="Avaluo.UsoSuelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.DensidadHabitacional" class="control-label"></label>
+                <input asp-for="Avaluo.DensidadHabitacional" class="form-control" />
+                <span asp-validation-for="Avaluo.DensidadHabitacional" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.UbicacionLoteCalle" class="control-label"></label>
+                <input asp-for="Avaluo.UbicacionLoteCalle" class="form-control" />
+                <span asp-validation-for="Avaluo.UbicacionLoteCalle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Restricciones" class="control-label"></label>
+                <input asp-for="Avaluo.Restricciones" class="form-control" />
+                <span asp-validation-for="Avaluo.Restricciones" class="text-danger"></span>
+            </div>
+
+            <br />
+
+            <h4>Construcción</h4>
+            <hr />
+
+            <div class="form-group">
+                <label asp-for="Avaluo.Giro" class="control-label"></label>
+                <input asp-for="Avaluo.Giro" class="form-control" />
+                <span asp-validation-for="Avaluo.Giro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.NumNiveles" class="control-label"></label>
+                <input asp-for="Avaluo.NumNiveles" class="form-control" />
+                <span asp-validation-for="Avaluo.NumNiveles" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.SuperficiesCubiertas" class="control-label"></label>
+                <input asp-for="Avaluo.SuperficiesCubiertas" class="form-control" />
+                <span asp-validation-for="Avaluo.SuperficiesCubiertas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.AreasAccesorias" class="control-label"></label>
+                <input asp-for="Avaluo.AreasAccesorias" class="form-control" />
+                <span asp-validation-for="Avaluo.AreasAccesorias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.SuperficieVendible" class="control-label"></label>
+                <input asp-for="Avaluo.SuperficieVendible" class="form-control" />
+                <span asp-validation-for="Avaluo.SuperficieVendible" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.ClaseGeneralInmueble" class="control-label"></label>
+                <input asp-for="Avaluo.ClaseGeneralInmueble" class="form-control" />
+                <span asp-validation-for="Avaluo.ClaseGeneralInmueble" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.EstadoConservacion" class="control-label"></label>
+                <input asp-for="Avaluo.EstadoConservacion" class="form-control" />
+                <span asp-validation-for="Avaluo.EstadoConservacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.EdadConstrucciones" class="control-label"></label>
+                <input asp-for="Avaluo.EdadConstrucciones" class="form-control" />
+                <span asp-validation-for="Avaluo.EdadConstrucciones" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.VidaUtilRemanente" class="control-label"></label>
+                <input asp-for="Avaluo.VidaUtilRemanente" class="form-control" />
+                <span asp-validation-for="Avaluo.VidaUtilRemanente" class="text-danger"></span>
+            </div>
+
+            <br />
+
+            <h4>Elementos de la Construcción</h4>
+            <hr />
+
+            <div class="form-group">
+                <label asp-for="Avaluo.Cimentacion" class="control-label"></label>
+                <input asp-for="Avaluo.Cimentacion" class="form-control" />
+                <span asp-validation-for="Avaluo.Cimentacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.SuperEstructura" class="control-label"></label>
+                <input asp-for="Avaluo.SuperEstructura" class="form-control" />
+                <span asp-validation-for="Avaluo.SuperEstructura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Muros" class="control-label"></label>
+                <input asp-for="Avaluo.Muros" class="form-control" />
+                <span asp-validation-for="Avaluo.Muros" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Escaleras" class="control-label"></label>
+                <input asp-for="Avaluo.Escaleras" class="form-control" />
+                <span asp-validation-for="Avaluo.Escaleras" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.LosasEntrepisos" class="control-label"></label>
+                <input asp-for="Avaluo.LosasEntrepisos" class="form-control" />
+                <span asp-validation-for="Avaluo.LosasEntrepisos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.LosasAzoteas" class="control-label"></label>
+                <input asp-for="Avaluo.LosasAzoteas" class="form-control" />
+                <span asp-validation-for="Avaluo.LosasAzoteas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.InstalacionesEspeciales" class="control-label"></label>
+                <input asp-for="Avaluo.InstalacionesEspeciales" class="form-control" />
+                <span asp-validation-for="Avaluo.InstalacionesEspeciales" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.ElementosAccesorios" class="control-label"></label>
+                <input asp-for="Avaluo.ElementosAccesorios" class="form-control" />
+                <span asp-validation-for="Avaluo.ElementosAccesorios" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.ObrasComplementarias" class="control-label"></label>
+                <input asp-for="Avaluo.ObrasComplementarias" class="form-control" />
+                <span asp-validation-for="Avaluo.ObrasComplementarias" class="text-danger"></span>
+            </div>
+            <br />
+            <h4>Acabados</h4>
+            <hr />
+            <div class="form-group">
+                <label asp-for="Avaluo.Pisos" class="control-label"></label>
+                <input asp-for="Avaluo.Pisos" class="form-control" />
+                <span asp-validation-for="Avaluo.Pisos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Muros2" class="control-label"></label>
+                <input asp-for="Avaluo.Muros2" class="form-control" />
+                <span asp-validation-for="Avaluo.Muros2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Plafones" class="control-label"></label>
+                <input asp-for="Avaluo.Plafones" class="form-control" />
+                <span asp-validation-for="Avaluo.Plafones" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.InstalacionesHidraulicas" class="control-label"></label>
+                <input asp-for="Avaluo.InstalacionesHidraulicas" class="form-control" />
+                <span asp-validation-for="Avaluo.InstalacionesHidraulicas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.InstalacionesSanitarias" class="control-label"></label>
+                <input asp-for="Avaluo.InstalacionesSanitarias" class="form-control" />
+                <span asp-validation-for="Avaluo.InstalacionesSanitarias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.InstalacionesElectricas" class="control-label"></label>
+                <input asp-for="Avaluo.InstalacionesElectricas" class="form-control" />
+                <span asp-validation-for="Avaluo.InstalacionesElectricas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Puertas" class="control-label"></label>
+                <input asp-for="Avaluo.Puertas" class="form-control" />
+                <span asp-validation-for="Avaluo.Puertas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Closets" class="control-label"></label>
+                <input asp-for="Avaluo.Closets" class="form-control" />
+                <span asp-validation-for="Avaluo.Closets" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.MueblesFijos" class="control-label"></label>
+                <input asp-for="Avaluo.MueblesFijos" class="form-control" />
+                <span asp-validation-for="Avaluo.MueblesFijos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Pisos2" class="control-label"></label>
+                <input asp-for="Avaluo.Pisos2" class="form-control" />
+                <span asp-validation-for="Avaluo.Pisos2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Ventanas" class="control-label"></label>
+                <input asp-for="Avaluo.Ventanas" class="form-control" />
+                <span asp-validation-for="Avaluo.Ventanas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Vidrieria" class="control-label"></label>
+                <input asp-for="Avaluo.Vidrieria" class="form-control" />
+                <span asp-validation-for="Avaluo.Vidrieria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Cerrajeria" class="control-label"></label>
+                <input asp-for="Avaluo.Cerrajeria" class="form-control" />
+                <span asp-validation-for="Avaluo.Cerrajeria" class="text-danger"></span>
+            </div>
+            <br />
+            <h4>
+                Conclusiones
+            </h4>
+            <hr />
+            <div class="form-group">
+                <label asp-for="Avaluo.DeterminacionValor" class="control-label"></label>
+                <input asp-for="Avaluo.DeterminacionValor" class="form-control" />
+                <span asp-validation-for="Avaluo.DeterminacionValor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avaluo.Comentarios" class="control-label"></label>
+                <input asp-for="Avaluo.Comentarios" class="form-control" />
+                <span asp-validation-for="Avaluo.Comentarios" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<br />
+
+<div>
+    <a asp-page="Index">Regresar</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
